@@ -2,10 +2,18 @@
   <div class="bg-white border rounded-lg overflow-hidden">
     <img :src="property.imageUrl" :alt="property.imageAlt" />
     <div class="p-6">
-      <div class="text-gray-600 text-xs uppercase font-semibold tracking-wide">
-        {{ property.beds }} beds &bull; {{ property.baths }} baths
+      <div class="flex items-baseline">
+        <span
+          class="inline-block bg-teal-200 text-teal-800 text-xs px-2 rounded-full tracking-wide uppercase font-semibold"
+          >New</span
+        >
+        <div
+          class="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide"
+        >
+          {{ property.beds }} beds &bull; {{ property.baths }} baths
+        </div>
       </div>
-      <h4 class="font-semibold text-lg leading-tight truncate">
+      <h4 class="mt-1 font-semibold text-lg leading-tight truncate">
         {{ property.title }}
       </h4>
       <div class="mt-1">
