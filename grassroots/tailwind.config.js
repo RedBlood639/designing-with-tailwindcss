@@ -1,12 +1,9 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
   theme: {
-    extend: {},
+    extend: {}
   },
   variants: {
-    backgroundColor: ["responsive", "hover", "focus", "active"],
-    fontSize: ["responsive", "hover"],
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
   },
-  plugins: [],
-};
+  plugins: []
+}
