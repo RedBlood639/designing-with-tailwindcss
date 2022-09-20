@@ -5,7 +5,7 @@
         class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 lg:px-12"
       >
         <div class="xl:max-w-lg xl:ml-auto">
-          <img class="h-10" src="/img/logo-blue.svg" alt="Workcation" />
+          <img class="h-10" src="/img/logo.svg" alt="Workcation" />
           <img
             class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-72 sm:w-full sm:object-cover sm:object-center lg:hidden"
             src="/img/beach-work.jpg"
@@ -15,7 +15,7 @@
             class="mt-6 text-2xl font-bold text-gray-900 leading-tight sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl"
           >
             You can work from anywhere.
-            <br class="hidden lg:inline" /><span class="text-brand-blue"
+            <br class="hidden lg:inline" /><span class="text-indigo-500"
               >Take advantage of it.</span
             >
           </h1>
@@ -25,9 +25,7 @@
             vacation.
           </p>
           <div class="mt-4 sm:mt-6">
-            <a
-              href="#"
-              class="btn bg-brand-blue text-white shadow-lg sm:text-base"
+            <a href="#" class="btn btn-indigo shadow-lg sm:text-base"
               >Book your escape</a
             >
           </div>
@@ -51,7 +49,8 @@
         <div class="flex flex-wrap -mx-4">
           <div
             class="mt-6 w-full px-4 lg:w-1/2 xl:w-1/3"
-            v-for="destination in popularDestinations"
+            v-for="(destination, i) in popularDestinations"
+            :key="i"
           >
             <DestinationCard :destination="destination" />
           </div>
