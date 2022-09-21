@@ -1,10 +1,16 @@
 <template>
   <div class="bg-white border rounded-lg overflow-hidden">
-    <img :src="property.imageUrl" :alt="property.imageAlt" />
+    <div class="relative pb-2/3">
+      <img
+        class="absolute h-full w-full object-cover"
+        :src="property.imageUrl"
+        :alt="property.imageAlt"
+      />
+    </div>
     <div class="p-6">
       <div class="flex items-baseline">
         <span
-          class="inline-block bg-teal-200 text-teal-800 text-xs px-2 rounded-full tracking-wide uppercase font-semibold"
+          class="inline-block bg-teal-200 text-teal-800 text-xs px-2 rounded-full uppercase font-semibold tracking-wide"
           >New</span
         >
         <div
@@ -24,14 +30,12 @@
         <svg
           v-for="i in 5"
           :key="i"
+          viewBox="0 0 24 24"
           :class="i <= property.rating ? 'text-teal-500' : 'text-gray-400'"
           class="h-4 w-4 fill-current"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M8.133 20.333c-1.147.628-2.488-.387-2.269-1.718l.739-4.488-3.13-3.178c-.927-.943-.415-2.585.867-2.78l4.324-.654 1.934-4.083a1.536 1.536 0 0 1 2.804 0l1.934 4.083 4.324.655c1.282.194 1.794 1.836.866 2.78l-3.129 3.177.739 4.488c.219 1.331-1.122 2.346-2.269 1.718L12 18.214l-3.867 2.119z"
-            fill-rule="evenodd"
+            d="M8.128 19.825a1.586 1.586 0 0 1-1.643-.117 1.543 1.543 0 0 1-.53-.662 1.515 1.515 0 0 1-.096-.837l.736-4.247-3.13-3a1.514 1.514 0 0 1-.39-1.569c.09-.271.254-.513.475-.698.22-.185.49-.306.776-.35L8.66 7.73l1.925-3.862c.128-.26.328-.48.577-.633a1.584 1.584 0 0 1 1.662 0c.25.153.45.373.577.633l1.925 3.847 4.334.615c.29.042.562.162.785.348.224.186.39.43.48.704a1.514 1.514 0 0 1-.404 1.58l-3.13 3 .736 4.247c.047.282.014.572-.096.837-.111.265-.294.494-.53.662a1.582 1.582 0 0 1-1.643.117l-3.865-2-3.865 2z"
           />
         </svg>
         <span class="ml-2 text-gray-600 text-sm"
