@@ -1,20 +1,20 @@
 <template>
   <div id="app" class="antialiased text-gray-900">
     <div class="bg-gray-200 min-h-screen">
-      <Navbar/>
+      <Navbar />
     </div>
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar'
+import Navbar from "./components/Navbar";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    Navbar
+    Navbar,
   },
-}
+};
 </script>
 
 <style src="./assets/tailwind.css"></style>
