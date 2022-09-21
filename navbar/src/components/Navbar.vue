@@ -47,12 +47,17 @@
         class="mt-1 block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded sm:mt-0 sm:ml-2"
         >Messages</a
       >
+      <AccountDropdown class="ml-6" />
     </div>
   </header>
 </template>
 
 <script>
+import AccountDropdown from "./AccountDropdown.vue";
 export default {
+  components: {
+    AccountDropdown,
+  },
   data() {
     return {
       isOpen: false,

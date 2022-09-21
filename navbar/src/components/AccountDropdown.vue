@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="relative">
     <button
       class="block h-8 w-8 rounded-full overflow-hidden border-2 border-gray-600 focus:outline-none focus:border-white"
     >
@@ -9,7 +9,7 @@
         alt="Your avatar"
       />
     </button>
-    <div class="mt-2 py-2 w-48 bg-white rounded-lg shadow-xl">
+    <div class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl">
       <a
         href="#"
         class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
